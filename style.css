@@ -47,7 +47,8 @@ p {
 }
 
 @media screen and (max-width: 1320px) {
-  .ncontainer {
-    padding-left: 10px;
+  body,
+  form {
+    padding: 0px 10px;
   }
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,6 +12,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0424223d11.js"
+      crossorigin="anonymous"
+    ></script>
     <title>GoT Character Quotes API</title>
   </head>
   <body class="bg-light">
@@ -35,47 +40,52 @@
       <div class="row">
         <div class="col-md-3 d-none d-md-block"></div>
         <div class="col-md-6 col-sm-12">
-          <form id="searchform" name="searchform">
-            <div class="form-group">
-              <div class="form-floating mb-3">
-                <input
-                  type="text"
-                  id="search"
-                  name="search"
-                  list="listOptions"
-                  class="form-control"
-                  placeholder=""
-                  required
-                />
-                <label for="search"
-                  >Search a character's first name and hit Enter</label
-                >
-                <datalist id="listOptions">
-                  <option value="jon"></option>
-                  <option value="sansa"></option>
-                  <option value="ned"></option>
-                  <option value="jaime"></option>
-                  <option value="tyrion"></option>
-                  <option value="cersei"></option>
-                  <option value="joffrey"></option>
-                  <option value="aerys"></option>
-                  <option value="daenerys"></option>
-                  <option value="tywin"></option>
-                  <option value="ramsay"></option>
-                  <option value="arya"></option>
-                  <option value="robert"></option>
-                  <option value="theon"></option>
-                  <option value="samwell"></option>
-                  <option value="varys"></option>
-                  <option value="bran"></option>
-                  <option value="brienne"></option>
-                  <option value="baelish"></option>
-                  <option value="tormund"></option>
-                  <option value="melisandre"></option>
-                  <option value="olenna"></option>
-                  <option value="mance"></option>
-                </datalist>
+          <form class="row" id="searchform" name="searchform">
+            <div class="col-10 px-0">
+              <div class="form-group">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    id="search"
+                    name="search"
+                    list="listOptions"
+                    class="form-control"
+                    placeholder=""
+                    required
+                  />
+                  <label for="search">Search a character's first name</label>
+                  <datalist id="listOptions">
+                    <option value="jon"></option>
+                    <option value="sansa"></option>
+                    <option value="ned"></option>
+                    <option value="jaime"></option>
+                    <option value="tyrion"></option>
+                    <option value="cersei"></option>
+                    <option value="joffrey"></option>
+                    <option value="aerys"></option>
+                    <option value="daenerys"></option>
+                    <option value="tywin"></option>
+                    <option value="ramsay"></option>
+                    <option value="arya"></option>
+                    <option value="robert"></option>
+                    <option value="theon"></option>
+                    <option value="samwell"></option>
+                    <option value="varys"></option>
+                    <option value="bran"></option>
+                    <option value="brienne"></option>
+                    <option value="baelish"></option>
+                    <option value="tormund"></option>
+                    <option value="melisandre"></option>
+                    <option value="olenna"></option>
+                    <option value="mance"></option>
+                  </datalist>
+                </div>
               </div>
+            </div>
+            <div class="col-2 px-0 my-1">
+              <button type="submit" class="btn btn-lg btn-light">
+                <i class="fas fa-search"></i>
+              </button>
             </div>
           </form>
         </div>
