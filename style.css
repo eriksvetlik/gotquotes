@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Open+Sans&display=swap");
+
+p {
+  font-family: "Open Sans", serif;
+  line-height: 1.6;
+}
+
+.bookletterFont {
+  font-family: "Goudy Bookletter 1911", serif;
+}
+
+.card {
+  margin: 1rem;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  padding: 100px 0px 50px;
+}
+
+.ncontainer {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.qcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .ncontainer {
+    padding-left: 10px;
+  }
+}
